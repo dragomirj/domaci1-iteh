@@ -25,18 +25,18 @@ while($row = $_test->fetch_assoc()) {
     echo 'ID: '. $row['id'] .', NAZIV: '. $row['naziv'] .', BOJA: '. $row['ime'] .', CENA: '. $row['cena'] .'<br>';
 }
 
-//TEST04 __createProizvod
+//TEST04 __createProizvodByName
 echo '<br>TEST04><br>';
 $proizvod = new Proizvod(null, "TEST04-ClassTest-Create", 'zuta', '9999.99');
-$_test = Proizvod::__createProizvod($proizvod, $_connection);
+$_test = Proizvod::__createProizvodByName($proizvod, $_connection);
 if ($_test){
     echo 'USPESNO JE UNET PROIZVOD!<br>';
 }
 
-//TEST05 __updateProizvod
+//TEST05 __updateProizvodByName
 echo '<br>TEST05><br>';
 $proizvod = new Proizvod($_connection->insert_id, "TEST04-ClassTest-Update", 'zuta', '9999.99');
-$_test = Proizvod::__updateProizvod($proizvod, $_connection);
+$_test = Proizvod::__updateProizvodByName($proizvod, $_connection);
 if ($_test){
     echo 'USPESNO JE IZMENJEN PROIZVOD!<br>';
 }
