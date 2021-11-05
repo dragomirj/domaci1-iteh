@@ -1,3 +1,6 @@
+### GITHUB LINK
+https://github.com/dragomirj/domaci1-iteh
+
 ### OPIS
 Sajt je napravljen kao jedna jednostavna prodavnica garderobe. Kada se udje na sajt prikazani su svi proizvodi koji mogu da se sortiraju pomocu PHP-a putem
 dva select dugmeta u footeru. Takodje sajt ima i search preko jQuery-ja gde promeni sve pozadine proizvoda koji ispunjavaju uslov. Na vrhu sajta postoji
